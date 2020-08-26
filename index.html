@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 6 reserva de horas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Formulario de reserva de horas</h1>
+    <form class="form-register" onsubmit="return validar();">
+        <h2>Rut</h2>
+        <input type="text" name="rut" id="rut">
+        <h2>Nombres</h2>
+        <input type="text" name="nombres" id="nombres">
+        <h2>Apellidos </h2>
+        <input type="text" name="apellidos" id="apellidos">
+        <h2>Edad</h2>
+        <input type="number" name="edad" id="edad">
+        <h2>Email</h2>
+        <input type="email" name="correo" id="correo">
+        <h2>Especialidad</h2>
+        <input list="especialidades">
+        <datalist id="especialidades">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Google Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <h2>Fecha</h2>
+        <input type="date" name="fecha" id="fecha">
+        <h2>Hora</h2>
+        <input type="time" name="hora" id="hora">
+        <input type="submit" value="Registrar" class="btn-enviar pointer">
+        <h3 id="resultado"></h3>
+    </form>
+
+
+
+
+
+    <script src="./javascript.js"></script>
+
+</body>
+
+</html>
